@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Black Ops One", sans-serif;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+:root {
+  --bg-0: #0b0a10;   /* main background (near-black purple) */
+  --bg-1: #12101c;   /* cards / panels */
+  --bg-2: #1a1628;   /* elevated elements */
+
+  --primary: #7c3aed; /* strong purple (buttons, highlights) */
+  --primary-2: #a855f7; /* lighter purple hover */
+
+  --accent: #22d3ee; /* optional cyan accent for contrast */
+
+  --text: #e5e7eb;   /* main text */
+  --muted: #9ca3af;  /* secondary text */
+
+  --border: rgba(124, 58, 237, 0.2);
+  --shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: var(--bg-0);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main{
+    background: var(--bg-1);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    gap: 8px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+span{
+    font-size: 26px;
+    color: var(--muted);
+    display: block;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+div button{
+    background: var(--primary);
+    color: var(--text);
+    padding: 5px 10px;
+    border: 2px solid var(--border);
+    outline: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.message{
+    font-size: 15px;
+    font-weight: 100;
+    display: block;
+}
+
+button:disabled{
+    color: #808080;
+}
